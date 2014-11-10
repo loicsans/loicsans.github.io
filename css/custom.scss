@@ -62,13 +62,16 @@ a {
         color:$nicelyRed;
         font-size:430%;
         text-shadow: 1px 1px 0 black, 2px 2px 0 $nicelyRed;
+        padding-top:100px;
+        background:url("../images/brain.svg") center top no-repeat;
+        background-size: 115px 115px;
         span {
         }
     }
     p {
         font-family: $scriptFont;
         font-size: 180%;
-        color: rgba(white, 0.3);
+        color: $nicelyGrey;
     }
 
 }

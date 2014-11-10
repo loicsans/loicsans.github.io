@@ -79,9 +79,13 @@ a {
 .brandSection h1 {
   color: #dd3333;
   font-size: 430%;
-  text-shadow: 1px 1px 0 black, 2px 2px 0 #dd3333; }
-/* line 68, custom.scss */
+  text-shadow: 1px 1px 0 black, 2px 2px 0 #dd3333;
+  padding-top: 100px;
+  background: url("../images/brain.svg") center top no-repeat;
+  -webkit-background-size: 115px 115px;
+          background-size: 115px 115px; }
+/* line 71, custom.scss */
 .brandSection p {
   font-family: "grafolita-script", "Dancing Script", "sorts-mill-goudy", "lobster", cursive;
   font-size: 180%;
-  color: rgba(255, 255, 255, 0.3); }
+  color: #303538; }
