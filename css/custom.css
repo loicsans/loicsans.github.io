@@ -74,4 +74,12 @@ a {
     color: #176e61;
     text-decoration: none; }
 
+/* line 60, custom.scss */
+.brandSection h1 {
+  font-size: 400%; }
+/* line 63, custom.scss */
+.brandSection p {
+  font-family: "grafolita-script", "Dancing Script", "sorts-mill-goudy", "lobster", cursive;
+  font-size: 150%; }
+
 /*# sourceMappingURL=custom.css.map */
