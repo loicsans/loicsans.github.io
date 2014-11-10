@@ -38,7 +38,7 @@ h4,
 h5,
 h6 {
   font-family: "brandon-grotesque", Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold; }
+  font-weight: normal; }
   /* line 33, custom.scss */
   h1 .lighter,
   h2 .lighter,
