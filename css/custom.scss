@@ -1,0 +1,59 @@
+/*---------------------------------------------------------------------------------
+ 
+		Title:       nicely.io Styles for Desktop, mobile, tablet
+		Author:      Loic Sans, loic@loicsans.com
+	
+---------------------------------------------------------------------------------*/
+
+@import 'library.scss';
+
+/********************************  Main Rules  ********************************/
+
+body {
+    font-family: $bodyFont;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    webkit-tap-highlight-color: rgba(white, .2);
+    text-rendering: optimizelegibility;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $titleFont;
+    font-weight: bold;
+    .lighter {
+        font-weight: 200;
+        letter-spacing: -0.01em;
+    }
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0em 0em 25px;
+    .brandSection & {
+        font-family: $scriptFont;
+    }
+    @media(min-width:767px) {
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 0em 0em 35px;
+    }
+}
+a {
+    @include transition(all 0.2s ease-in-out);
+    color: rgb(40, 195, 171);
+    &:hover, &:focus {
+        color: #176e61;
+        text-decoration: none;
+    }
+}
+

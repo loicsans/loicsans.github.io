@@ -1,0 +1,125 @@
+/*---------------------------------------------------------------------------------
+ 
+		Title:             Olymp.io SASS library and Style Guide
+		Author:         Loic Sans, loic@olymp.io & Daniel Karlsson, daniel@olymp.io
+	
+---------------------------------------------------------------------------------*/
+$bodyFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$navFont: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$scriptFont: "grafolita-script", 'Dancing Script', "sorts-mill-goudy", "lobster", cursive;
+$titleFont: "brandon-grotesque", Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$olympioGreen: rgb(40, 195, 171);
+$olympioBlack: rgb(32, 32, 36);
+
+$olympioDarkGreen2: rgb(0, 102, 98);
+$olympioDarkGreen: rgb(23, 110, 97);
+$olympioGreenBlue: rgb(65,123,149);
+$olympioGreenBlue2: rgb(127, 187, 218);
+
+$olympioGreenCompl: rgb(179, 0, 7);
+$olympioOrange: rgb(222, 137, 41);
+
+@mixin border-radius($property) {
+    -moz-border-radius: $property;
+    -o-border-radius: $property;
+    -webkit-border-radius: $property;
+    border-radius: $property;
+}
+@mixin box-shadow($boxshadow...) {
+    -moz-box-shadow: $boxshadow;
+    -o-box-shadow: $boxshadow;
+    -webkit-box-shadow: $boxshadow;
+    box-shadow: $boxshadow;
+}
+@mixin background-size($backgroundSize...) {
+    -moz-background-size: $backgroundSize;
+    -o-background-size: $backgroundSize;
+    -webkit-background-size: $backgroundSize;
+    background-size: $backgroundSize;
+}
+@mixin transition($transitonProperties) {
+    -moz-transition: $transitonProperties;
+    -o-transition: $transitonProperties;
+    -webkit-transition: $transitonProperties;
+    transition: $transitonProperties;
+}
+@mixin noWrapTxt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin placeholder-color($color){
+  &.placeholder{
+    color: $color;
+  }
+
+  &:-moz-placeholder{
+    color: $color;
+  }
+    
+  &::-webkit-input-placeholder{
+    color: $color;
+  }
+
+  &:-ms-input-placeholder{
+    color: $color;
+  }
+}
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/* Media Queries
+  ========================================================================== */
+$width-small:  768px;
+$width-medium: 992px;
+$width-large:  1200px;
+ 
+@mixin responsive($width) {
+  @if $width == wide-screens {
+    @media only screen and (min-width: $width-large) { @content; }
+  }
+  @else if $width == medium-screens {
+    @media only screen and (min-width: $width-medium) {@content; }
+  }
+  @else if $width == small-screens {
+    @media only screen and (min-width: $width-small) { @content; }
+  }
+  @else if $width == wide-max-screens {
+    @media only screen and (max-width: $width-large) { @content; }
+  }
+  @else if $width == medium-max-screens {
+    @media only screen and (max-width: $width-medium) { @content; }
+  }
+  @else if $width == small-max-screens {
+    @media only screen and (max-width: $width-small) { @content; }
+  }
+}
+
+/* Placeholder
+  ========================================================================== */
+@mixin placeholder-color($color){
+  &.placeholder{
+    color: $color;
+  }
+  &:-moz-placeholder{
+    color: $color;
+  }
+  &::-webkit-input-placeholder{
+    color: $color;
+  }
+  &:-ms-input-placeholder{
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color;
+  }
+}
