@@ -77,8 +77,11 @@ a {
 
 /* line 61, custom.scss */
 .brandSection h1 {
-  font-size: 400%; }
-/* line 64, custom.scss */
+  color: #dd3333;
+  font-size: 430%;
+  text-shadow: 1px 1px 0 black, 2px 2px 0 #dd3333; }
+/* line 68, custom.scss */
 .brandSection p {
   font-family: "grafolita-script", "Dancing Script", "sorts-mill-goudy", "lobster", cursive;
-  font-size: 180%; }
+  font-size: 180%;
+  color: rgba(255, 255, 255, 0.3); }

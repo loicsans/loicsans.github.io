@@ -10,15 +10,9 @@ $scriptFont: "grafolita-script", 'Dancing Script', "sorts-mill-goudy", "lobster"
 $titleFont: "brandon-grotesque", Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $olympioGreen: rgb(40, 195, 171);
-$olympioBlack: rgb(32, 32, 36);
+$nicelyRed: rgb(221, 51, 51);
+$nicelyGrey: rgb(48, 53, 56);
 
-$olympioDarkGreen2: rgb(0, 102, 98);
-$olympioDarkGreen: rgb(23, 110, 97);
-$olympioGreenBlue: rgb(65,123,149);
-$olympioGreenBlue2: rgb(127, 187, 218);
-
-$olympioGreenCompl: rgb(179, 0, 7);
-$olympioOrange: rgb(222, 137, 41);
 
 @mixin border-radius($property) {
     -moz-border-radius: $property;

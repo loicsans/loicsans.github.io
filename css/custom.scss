@@ -59,11 +59,16 @@ a {
 }
 .brandSection {
     h1 {
-        font-size:400%;
+        color:$nicelyRed;
+        font-size:430%;
+        text-shadow: 1px 1px 0 black, 2px 2px 0 $nicelyRed;
+        span {
+        }
     }
     p {
         font-family: $scriptFont;
-        font-size:180%;
+        font-size: 180%;
+        color: rgba(white, 0.3);
     }
 
 }
