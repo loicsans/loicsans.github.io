@@ -56,7 +56,8 @@ p {
   margin: 0em 0em 25px; }
   /* line 42, custom.scss */
   .brandSection p {
-    font-family: "grafolita-script", "Dancing Script", "sorts-mill-goudy", "lobster", cursive; }
+    font-family: "grafolita-script", "Dancing Script", "sorts-mill-goudy", "lobster", cursive;
+    font-weight: 400; }
   @media (min-width: 767px) {
     /* line 38, custom.scss */
     p {
@@ -64,22 +65,20 @@ p {
       line-height: 1.6;
       margin: 0em 0em 35px; } }
 
-/* line 51, custom.scss */
+/* line 52, custom.scss */
 a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #28c3ab; }
-  /* line 54, custom.scss */
+  /* line 55, custom.scss */
   a:hover, a:focus {
     color: #176e61;
     text-decoration: none; }
 
-/* line 60, custom.scss */
+/* line 61, custom.scss */
 .brandSection h1 {
   font-size: 400%; }
-/* line 63, custom.scss */
+/* line 64, custom.scss */
 .brandSection p {
   font-family: "grafolita-script", "Dancing Script", "sorts-mill-goudy", "lobster", cursive;
-  font-size: 150%; }
-
-/*# sourceMappingURL=custom.css.map */
+  font-size: 180%; }
