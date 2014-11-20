@@ -58,6 +58,10 @@ a {
     }
 }
 .brandSection {
+    .svg-logo {
+        width:100px;
+        margin:0 auto;
+    }
     h1 {
         color:$nicelyRed;
         font-size:430%;
@@ -66,6 +70,7 @@ a {
         background:url("../images/brain.svg") center top no-repeat;
         background-size: 115px 115px;
         span {
+            text-shadow: none;
         }
     }
     p {

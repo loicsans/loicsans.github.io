@@ -76,6 +76,10 @@ a {
     text-decoration: none; }
 
 /* line 61, custom.scss */
+.brandSection .svg-logo {
+  width: 100px;
+  margin: 0 auto; }
+/* line 65, custom.scss */
 .brandSection h1 {
   color: #dd3333;
   font-size: 430%;
@@ -84,7 +88,10 @@ a {
   background: url("../images/brain.svg") center top no-repeat;
   -webkit-background-size: 115px 115px;
           background-size: 115px 115px; }
-/* line 71, custom.scss */
+  /* line 72, custom.scss */
+  .brandSection h1 span {
+    text-shadow: none; }
+/* line 76, custom.scss */
 .brandSection p {
   font-family: "grafolita-script", "Dancing Script", "sorts-mill-goudy", "lobster", cursive;
   font-size: 180%;
